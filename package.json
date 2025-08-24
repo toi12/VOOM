@@ -1,0 +1,9 @@
+{
+  "name": "voom-monorepo",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "web-frontend",
+    "desktop"
+  ]
+}

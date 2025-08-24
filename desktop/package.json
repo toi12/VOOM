@@ -1,0 +1,31 @@
+{
+  "name": "voom-desktop",
+  "version": "1.0.0",
+  "description": "VOOM Desktop",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder -mwl"
+  },
+  "build": {
+    "appId": "com.voom.app",
+    "productName": "VOOM",
+    "files": [
+      "build/**/*",
+      "**/*"
+    ],
+    "directories": {
+      "buildResources": "../assets/logo"
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ]
+    }
+  },
+  "devDependencies": {
+    "electron": "^29.1.0",
+    "electron-builder": "^24.6.0"
+  }
+}
